@@ -2,13 +2,16 @@
 
 namespace leetcode;
 
-using problem5;
+using problem7;
 class Run
 {
     static void Main()
     {
-        var s = "bacabab";
+        /* test data */
+
         var solution = new Solution();
-        Console.WriteLine(solution.LongestPalindrome(s));
+
+        // output result
+        Console.WriteLine("result");
     }
 }
