@@ -1,4 +1,4 @@
-namespace leetcode.problem6;
+namespace leetcode.ProblemSolution._6;
 
 public class Solution
 {

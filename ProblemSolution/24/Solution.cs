@@ -1,7 +1,7 @@
 using System;
 using leetcode.common;
 
-namespace leetcode._24;
+namespace leetcode.ProblemSolution._24;
 
 public class Solution
 {

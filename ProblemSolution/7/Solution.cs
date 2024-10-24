@@ -1,4 +1,4 @@
-namespace leetcode.problem7;
+namespace leetcode.ProblemSolution._7;
 
 public class Solution {
     public int Reverse(int x)

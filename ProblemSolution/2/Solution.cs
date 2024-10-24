@@ -1,4 +1,5 @@
-namespace leetcode.problem2;
+namespace leetcode.ProblemSolution._2;
+using leetcode.common;
 
 public class Solution
 {
@@ -9,47 +10,47 @@ public class Solution
         var carry = 0;
         while(true)
         {
-            var sum = worker1.Val + worker2.Val + carry;
+            var sum = worker1.val + worker2.val + carry;
             if(sum >= 10)
             {
-                worker1.Val = sum - 10;
+                worker1.val = sum - 10;
                 carry = 1;
             }
             else
             {
-                worker1.Val = sum;
+                worker1.val = sum;
                 carry = 0;
             }
 
-            if (worker1.Next == null || worker2.Next == null)
+            if (worker1.next == null || worker2.next == null)
                 break;
-            worker1 = worker1.Next;
-            worker2 = worker2.Next;
+            worker1 = worker1.next;
+            worker2 = worker2.next;
         }
 
-        worker1.Next ??= worker2.Next;
+        worker1.next ??= worker2.next;
         // if left is not empty then left will not change
         // if left is empty then left will be assigned with the value of right
 
-        while(worker1.Next != null && carry == 1)
+        while(worker1.next != null && carry == 1)
         {
-            worker1 = worker1.Next;
-            int sum = worker1.Val + carry;
+            worker1 = worker1.next;
+            int sum = worker1.val + carry;
             if(sum >= 10)
             {
-                worker1.Val = sum - 10;
+                worker1.val = sum - 10;
                 carry = 1;
             }
             else
             {
-                worker1.Val = sum;
+                worker1.val = sum;
                 carry = 0;
             }
         }
 
-        if (worker1.Next == null && carry == 1)
+        if (worker1.next == null && carry == 1)
         {
-            worker1.Next = new ListNode(1);
+            worker1.next = new ListNode(1);
         }
         return l1;
     }

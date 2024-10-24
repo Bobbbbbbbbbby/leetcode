@@ -1,4 +1,4 @@
-namespace leetcode.problem5;
+namespace leetcode.ProblemSolution._5;
 
 public class Solution {
     public string LongestPalindrome(string s)

@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace leetcode._26;
+namespace leetcode.ProblemSolution._26;
 
 public class Solution
 {

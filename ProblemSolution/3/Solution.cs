@@ -1,4 +1,4 @@
-namespace leetcode.problem3;
+namespace leetcode.ProblemSolution._3;
 
 public class Solution {
     public int LengthOfLongestSubstring(string s)
