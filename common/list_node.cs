@@ -1,3 +1,5 @@
+namespace leetcode.common;
+
 public class ListNode {
     public int val;
     public ListNode next;
