@@ -2,7 +2,7 @@
 
 namespace leetcode;
 
-using problem7;
+using problem2;
 class Run
 {
     static void Main()
